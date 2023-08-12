@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1832331C2A8756DB003FF42E /* CommonStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832331B2A8756DB003FF42E /* CommonStrings.swift */; };
+		1871F5F82A8694EC00290B14 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871F5F72A8694EC00290B14 /* CommonMethods.swift */; };
+		1871F5FB2A8695ED00290B14 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871F5FA2A8695ED00290B14 /* SignUpViewController.swift */; };
+		1871F5FD2A86960300290B14 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871F5FC2A86960300290B14 /* SignUpViewModel.swift */; };
+		1871F6002A86AB4600290B14 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871F5FF2A86AB4600290B14 /* StringExtension.swift */; };
+		18BB12472A86782C00093E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB12462A86782C00093E4A /* AppDelegate.swift */; };
+		18BB12492A86782C00093E4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB12482A86782C00093E4A /* SceneDelegate.swift */; };
+		18BB124E2A86782C00093E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BB124C2A86782C00093E4A /* Main.storyboard */; };
+		18BB12502A86782F00093E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BB124F2A86782F00093E4A /* Assets.xcassets */; };
+		18BB12532A86782F00093E4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BB12512A86782F00093E4A /* LaunchScreen.storyboard */; };
+		18BB125E2A86782F00093E4A /* Siloam_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB125D2A86782F00093E4A /* Siloam_TestTests.swift */; };
+		18BB12682A86782F00093E4A /* Siloam_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB12672A86782F00093E4A /* Siloam_TestUITests.swift */; };
+		18BB126A2A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB12692A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift */; };
+		18BB127B2A86850C00093E4A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB127A2A86850C00093E4A /* LoginViewModel.swift */; };
+		18BB127D2A8689B600093E4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB127C2A8689B600093E4A /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18BB125A2A86782F00093E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BB123B2A86782C00093E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BB12422A86782C00093E4A;
+			remoteInfo = "Siloam Test";
+		};
+		18BB12642A86782F00093E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BB123B2A86782C00093E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BB12422A86782C00093E4A;
+			remoteInfo = "Siloam Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1832331B2A8756DB003FF42E /* CommonStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStrings.swift; sourceTree = "<group>"; };
+		1871F5F72A8694EC00290B14 /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		1871F5FA2A8695ED00290B14 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1871F5FC2A86960300290B14 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		1871F5FF2A86AB4600290B14 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		18BB12432A86782C00093E4A /* Siloam Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Siloam Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BB12462A86782C00093E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18BB12482A86782C00093E4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18BB124D2A86782C00093E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18BB124F2A86782F00093E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18BB12522A86782F00093E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18BB12542A86782F00093E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BB12592A86782F00093E4A /* Siloam TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Siloam TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BB125D2A86782F00093E4A /* Siloam_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siloam_TestTests.swift; sourceTree = "<group>"; };
+		18BB12632A86782F00093E4A /* Siloam TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Siloam TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BB12672A86782F00093E4A /* Siloam_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siloam_TestUITests.swift; sourceTree = "<group>"; };
+		18BB12692A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siloam_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18BB127A2A86850C00093E4A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		18BB127C2A8689B600093E4A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18BB12402A86782C00093E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB12562A86782F00093E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB12602A86782F00093E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1871F5F62A8694CD00290B14 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				1871F5F72A8694EC00290B14 /* CommonMethods.swift */,
+				1832331B2A8756DB003FF42E /* CommonStrings.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		1871F5F92A8695D600290B14 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				1871F5FA2A8695ED00290B14 /* SignUpViewController.swift */,
+				1871F5FC2A86960300290B14 /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		1871F5FE2A86AB2E00290B14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1871F5FF2A86AB4600290B14 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18BB123A2A86782C00093E4A = {
+			isa = PBXGroup;
+			children = (
+				18BB12452A86782C00093E4A /* Siloam Test */,
+				18BB125C2A86782F00093E4A /* Siloam TestTests */,
+				18BB12662A86782F00093E4A /* Siloam TestUITests */,
+				18BB12442A86782C00093E4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18BB12442A86782C00093E4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BB12432A86782C00093E4A /* Siloam Test.app */,
+				18BB12592A86782F00093E4A /* Siloam TestTests.xctest */,
+				18BB12632A86782F00093E4A /* Siloam TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18BB12452A86782C00093E4A /* Siloam Test */ = {
+			isa = PBXGroup;
+			children = (
+				1871F5FE2A86AB2E00290B14 /* Extensions */,
+				1871F5F62A8694CD00290B14 /* Commons */,
+				18BB12762A867B4800093E4A /* Controller */,
+				18BB12462A86782C00093E4A /* AppDelegate.swift */,
+				18BB12482A86782C00093E4A /* SceneDelegate.swift */,
+				18BB124C2A86782C00093E4A /* Main.storyboard */,
+				18BB124F2A86782F00093E4A /* Assets.xcassets */,
+				18BB12512A86782F00093E4A /* LaunchScreen.storyboard */,
+				18BB12542A86782F00093E4A /* Info.plist */,
+			);
+			path = "Siloam Test";
+			sourceTree = "<group>";
+		};
+		18BB125C2A86782F00093E4A /* Siloam TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				18BB125D2A86782F00093E4A /* Siloam_TestTests.swift */,
+			);
+			path = "Siloam TestTests";
+			sourceTree = "<group>";
+		};
+		18BB12662A86782F00093E4A /* Siloam TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18BB12672A86782F00093E4A /* Siloam_TestUITests.swift */,
+				18BB12692A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift */,
+			);
+			path = "Siloam TestUITests";
+			sourceTree = "<group>";
+		};
+		18BB12762A867B4800093E4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1871F5F92A8695D600290B14 /* SignUp */,
+				18BB12792A8683DF00093E4A /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18BB12792A8683DF00093E4A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18BB127C2A8689B600093E4A /* LoginViewController.swift */,
+				18BB127A2A86850C00093E4A /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18BB12422A86782C00093E4A /* Siloam Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BB126D2A86782F00093E4A /* Build configuration list for PBXNativeTarget "Siloam Test" */;
+			buildPhases = (
+				18BB123F2A86782C00093E4A /* Sources */,
+				18BB12402A86782C00093E4A /* Frameworks */,
+				18BB12412A86782C00093E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Siloam Test";
+			productName = "Siloam Test";
+			productReference = 18BB12432A86782C00093E4A /* Siloam Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18BB12582A86782F00093E4A /* Siloam TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BB12702A86782F00093E4A /* Build configuration list for PBXNativeTarget "Siloam TestTests" */;
+			buildPhases = (
+				18BB12552A86782F00093E4A /* Sources */,
+				18BB12562A86782F00093E4A /* Frameworks */,
+				18BB12572A86782F00093E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18BB125B2A86782F00093E4A /* PBXTargetDependency */,
+			);
+			name = "Siloam TestTests";
+			productName = "Siloam TestTests";
+			productReference = 18BB12592A86782F00093E4A /* Siloam TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18BB12622A86782F00093E4A /* Siloam TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BB12732A86782F00093E4A /* Build configuration list for PBXNativeTarget "Siloam TestUITests" */;
+			buildPhases = (
+				18BB125F2A86782F00093E4A /* Sources */,
+				18BB12602A86782F00093E4A /* Frameworks */,
+				18BB12612A86782F00093E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18BB12652A86782F00093E4A /* PBXTargetDependency */,
+			);
+			name = "Siloam TestUITests";
+			productName = "Siloam TestUITests";
+			productReference = 18BB12632A86782F00093E4A /* Siloam TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18BB123B2A86782C00093E4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					18BB12422A86782C00093E4A = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					18BB12582A86782F00093E4A = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 18BB12422A86782C00093E4A;
+					};
+					18BB12622A86782F00093E4A = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 18BB12422A86782C00093E4A;
+					};
+				};
+			};
+			buildConfigurationList = 18BB123E2A86782C00093E4A /* Build configuration list for PBXProject "Siloam Test" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18BB123A2A86782C00093E4A;
+			productRefGroup = 18BB12442A86782C00093E4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18BB12422A86782C00093E4A /* Siloam Test */,
+				18BB12582A86782F00093E4A /* Siloam TestTests */,
+				18BB12622A86782F00093E4A /* Siloam TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18BB12412A86782C00093E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BB12532A86782F00093E4A /* LaunchScreen.storyboard in Resources */,
+				18BB12502A86782F00093E4A /* Assets.xcassets in Resources */,
+				18BB124E2A86782C00093E4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB12572A86782F00093E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB12612A86782F00093E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18BB123F2A86782C00093E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1871F5FB2A8695ED00290B14 /* SignUpViewController.swift in Sources */,
+				18BB127B2A86850C00093E4A /* LoginViewModel.swift in Sources */,
+				1832331C2A8756DB003FF42E /* CommonStrings.swift in Sources */,
+				18BB12472A86782C00093E4A /* AppDelegate.swift in Sources */,
+				18BB127D2A8689B600093E4A /* LoginViewController.swift in Sources */,
+				1871F6002A86AB4600290B14 /* StringExtension.swift in Sources */,
+				18BB12492A86782C00093E4A /* SceneDelegate.swift in Sources */,
+				1871F5F82A8694EC00290B14 /* CommonMethods.swift in Sources */,
+				1871F5FD2A86960300290B14 /* SignUpViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB12552A86782F00093E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BB125E2A86782F00093E4A /* Siloam_TestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB125F2A86782F00093E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BB12682A86782F00093E4A /* Siloam_TestUITests.swift in Sources */,
+				18BB126A2A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18BB125B2A86782F00093E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18BB12422A86782C00093E4A /* Siloam Test */;
+			targetProxy = 18BB125A2A86782F00093E4A /* PBXContainerItemProxy */;
+		};
+		18BB12652A86782F00093E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18BB12422A86782C00093E4A /* Siloam Test */;
+			targetProxy = 18BB12642A86782F00093E4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18BB124C2A86782C00093E4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BB124D2A86782C00093E4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18BB12512A86782F00093E4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BB12522A86782F00093E4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18BB126B2A86782F00093E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18BB126C2A86782F00093E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18BB126E2A86782F00093E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Siloam Test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghav.Siloam-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		18BB126F2A86782F00093E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Siloam Test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghav.Siloam-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		18BB12712A86782F00093E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghav.Siloam-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Siloam Test.app/Siloam Test";
+			};
+			name = Debug;
+		};
+		18BB12722A86782F00093E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghav.Siloam-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Siloam Test.app/Siloam Test";
+			};
+			name = Release;
+		};
+		18BB12742A86782F00093E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghav.Siloam-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Siloam Test";
+			};
+			name = Debug;
+		};
+		18BB12752A86782F00093E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghav.Siloam-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Siloam Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18BB123E2A86782C00093E4A /* Build configuration list for PBXProject "Siloam Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BB126B2A86782F00093E4A /* Debug */,
+				18BB126C2A86782F00093E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BB126D2A86782F00093E4A /* Build configuration list for PBXNativeTarget "Siloam Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BB126E2A86782F00093E4A /* Debug */,
+				18BB126F2A86782F00093E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BB12702A86782F00093E4A /* Build configuration list for PBXNativeTarget "Siloam TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BB12712A86782F00093E4A /* Debug */,
+				18BB12722A86782F00093E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BB12732A86782F00093E4A /* Build configuration list for PBXNativeTarget "Siloam TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BB12742A86782F00093E4A /* Debug */,
+				18BB12752A86782F00093E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18BB123B2A86782C00093E4A /* Project object */;
+}
