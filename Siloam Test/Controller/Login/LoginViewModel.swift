@@ -11,24 +11,25 @@ class LoginViewModel {
     
     // MARK: - Variables
     
-    var showAlert: ((_ msg: String)->())?
+    var showAlert: ((_ msg: String) -> ())?
+    var loginSuccessful: (() -> ())?
     
     // MARK: - Actions
     
     func checkLoginButtonFunctionality(username: String, password: String) {
         if username == "" {
-            showAlert?(CommonStrings.emptyUname)
+            self.showAlert?(CommonStrings.emptyUname)
         }
         else if password == "" {
-            showAlert?(CommonStrings.emptyPass)
+            self.showAlert?(CommonStrings.emptyPass)
         }
         else {
             let credentials = self.retrieveCredentials()
             if credentials.uname != username || credentials.pass != password {
-                showAlert?(CommonStrings.wrongCreds)
+                self.showAlert?(CommonStrings.wrongCreds)
             }
             else {
-                showAlert?("Right user login")
+                self.loginSuccessful?()
             }
         }
     }

@@ -22,6 +22,14 @@
 		18BB126A2A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB12692A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift */; };
 		18BB127B2A86850C00093E4A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB127A2A86850C00093E4A /* LoginViewModel.swift */; };
 		18BB127D2A8689B600093E4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB127C2A8689B600093E4A /* LoginViewController.swift */; };
+		18DD73712A87867A00A1E307 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD73702A87867A00A1E307 /* MealViewController.swift */; };
+		18DD73732A87868D00A1E307 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD73722A87868D00A1E307 /* MealViewModel.swift */; };
+		18DD73762A8791B000A1E307 /* MealsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD73752A8791B000A1E307 /* MealsListModel.swift */; };
+		18DD73792A87B3D500A1E307 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD73782A87B3D500A1E307 /* MealDetailViewController.swift */; };
+		18DD737B2A87B40B00A1E307 /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD737A2A87B40B00A1E307 /* MealDetailViewModel.swift */; };
+		6FD884949BDB49CCD64FE706 /* Pods_Siloam_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE95C2035E7298CECF81D606 /* Pods_Siloam_TestTests.framework */; };
+		AB901C3D26AE449461BC4DBF /* Pods_Siloam_Test_Siloam_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFBBD188738E4B74F2D4191 /* Pods_Siloam_Test_Siloam_TestUITests.framework */; };
+		FA3BA0E20C27E720AEA73BCD /* Pods_Siloam_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3591688CE2EBB8EDF9293C /* Pods_Siloam_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09CA201F09809EC8ED2DF4CB /* Pods-Siloam Test-Siloam TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siloam Test-Siloam TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Siloam Test-Siloam TestUITests/Pods-Siloam Test-Siloam TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		11BD7DE28DB7195DE4594D59 /* Pods-Siloam Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siloam Test.debug.xcconfig"; path = "Target Support Files/Pods-Siloam Test/Pods-Siloam Test.debug.xcconfig"; sourceTree = "<group>"; };
 		1832331B2A8756DB003FF42E /* CommonStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStrings.swift; sourceTree = "<group>"; };
 		1871F5F72A8694EC00290B14 /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
 		1871F5FA2A8695ED00290B14 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +71,18 @@
 		18BB12692A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siloam_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18BB127A2A86850C00093E4A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		18BB127C2A8689B600093E4A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18DD73702A87867A00A1E307 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
+		18DD73722A87868D00A1E307 /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
+		18DD73752A8791B000A1E307 /* MealsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListModel.swift; sourceTree = "<group>"; };
+		18DD73782A87B3D500A1E307 /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
+		18DD737A2A87B40B00A1E307 /* MealDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
+		2C0568849DD160FE8E248E30 /* Pods-Siloam Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siloam Test.release.xcconfig"; path = "Target Support Files/Pods-Siloam Test/Pods-Siloam Test.release.xcconfig"; sourceTree = "<group>"; };
+		39B1B6420605F51B830CD2BE /* Pods-Siloam TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siloam TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Siloam TestTests/Pods-Siloam TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF95992E6B4BDCD725ABEE0 /* Pods-Siloam Test-Siloam TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siloam Test-Siloam TestUITests.release.xcconfig"; path = "Target Support Files/Pods-Siloam Test-Siloam TestUITests/Pods-Siloam Test-Siloam TestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F3591688CE2EBB8EDF9293C /* Pods_Siloam_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siloam_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEFBBD188738E4B74F2D4191 /* Pods_Siloam_Test_Siloam_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siloam_Test_Siloam_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2774AC5F5F14EB9DA52A65 /* Pods-Siloam TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siloam TestTests.release.xcconfig"; path = "Target Support Files/Pods-Siloam TestTests/Pods-Siloam TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE95C2035E7298CECF81D606 /* Pods_Siloam_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siloam_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3BA0E20C27E720AEA73BCD /* Pods_Siloam_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD884949BDB49CCD64FE706 /* Pods_Siloam_TestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB901C3D26AE449461BC4DBF /* Pods_Siloam_Test_Siloam_TestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +146,8 @@
 				18BB125C2A86782F00093E4A /* Siloam TestTests */,
 				18BB12662A86782F00093E4A /* Siloam TestUITests */,
 				18BB12442A86782C00093E4A /* Products */,
+				FC9A6F1A0C770D10BF6E084C /* Pods */,
+				2735CEFCB81AABC08CB9A235 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +164,7 @@
 		18BB12452A86782C00093E4A /* Siloam Test */ = {
 			isa = PBXGroup;
 			children = (
+				18DD73742A87918D00A1E307 /* Models */,
 				1871F5FE2A86AB2E00290B14 /* Extensions */,
 				1871F5F62A8694CD00290B14 /* Commons */,
 				18BB12762A867B4800093E4A /* Controller */,
@@ -170,6 +198,8 @@
 		18BB12762A867B4800093E4A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18DD73772A87B3B800A1E307 /* Meal Detail */,
+				18DD736F2A87866100A1E307 /* Meal */,
 				1871F5F92A8695D600290B14 /* SignUp */,
 				18BB12792A8683DF00093E4A /* Login */,
 			);
@@ -185,6 +215,55 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		18DD736F2A87866100A1E307 /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+				18DD73702A87867A00A1E307 /* MealViewController.swift */,
+				18DD73722A87868D00A1E307 /* MealViewModel.swift */,
+			);
+			path = Meal;
+			sourceTree = "<group>";
+		};
+		18DD73742A87918D00A1E307 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18DD73752A8791B000A1E307 /* MealsListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18DD73772A87B3B800A1E307 /* Meal Detail */ = {
+			isa = PBXGroup;
+			children = (
+				18DD73782A87B3D500A1E307 /* MealDetailViewController.swift */,
+				18DD737A2A87B40B00A1E307 /* MealDetailViewModel.swift */,
+			);
+			path = "Meal Detail";
+			sourceTree = "<group>";
+		};
+		2735CEFCB81AABC08CB9A235 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F3591688CE2EBB8EDF9293C /* Pods_Siloam_Test.framework */,
+				DEFBBD188738E4B74F2D4191 /* Pods_Siloam_Test_Siloam_TestUITests.framework */,
+				FE95C2035E7298CECF81D606 /* Pods_Siloam_TestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC9A6F1A0C770D10BF6E084C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11BD7DE28DB7195DE4594D59 /* Pods-Siloam Test.debug.xcconfig */,
+				2C0568849DD160FE8E248E30 /* Pods-Siloam Test.release.xcconfig */,
+				09CA201F09809EC8ED2DF4CB /* Pods-Siloam Test-Siloam TestUITests.debug.xcconfig */,
+				5BF95992E6B4BDCD725ABEE0 /* Pods-Siloam Test-Siloam TestUITests.release.xcconfig */,
+				39B1B6420605F51B830CD2BE /* Pods-Siloam TestTests.debug.xcconfig */,
+				EA2774AC5F5F14EB9DA52A65 /* Pods-Siloam TestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18BB126D2A86782F00093E4A /* Build configuration list for PBXNativeTarget "Siloam Test" */;
 			buildPhases = (
+				32480EFDF9232D6CE95A19F0 /* [CP] Check Pods Manifest.lock */,
 				18BB123F2A86782C00093E4A /* Sources */,
 				18BB12402A86782C00093E4A /* Frameworks */,
 				18BB12412A86782C00093E4A /* Resources */,
+				09E6E8DEB3BC136FD9E4A126 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18BB12702A86782F00093E4A /* Build configuration list for PBXNativeTarget "Siloam TestTests" */;
 			buildPhases = (
+				54E560BCDD90EBC2644A9E62 /* [CP] Check Pods Manifest.lock */,
 				18BB12552A86782F00093E4A /* Sources */,
 				18BB12562A86782F00093E4A /* Frameworks */,
 				18BB12572A86782F00093E4A /* Resources */,
@@ -227,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18BB12732A86782F00093E4A /* Build configuration list for PBXNativeTarget "Siloam TestUITests" */;
 			buildPhases = (
+				D19F91AC7AC9B0F703FC02D7 /* [CP] Check Pods Manifest.lock */,
 				18BB125F2A86782F00093E4A /* Sources */,
 				18BB12602A86782F00093E4A /* Frameworks */,
 				18BB12612A86782F00093E4A /* Resources */,
+				EEAC02201AF4162D61DC6B36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,19 +395,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09E6E8DEB3BC136FD9E4A126 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siloam Test/Pods-Siloam Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siloam Test/Pods-Siloam Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Siloam Test/Pods-Siloam Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32480EFDF9232D6CE95A19F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Siloam Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54E560BCDD90EBC2644A9E62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Siloam TestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D19F91AC7AC9B0F703FC02D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Siloam Test-Siloam TestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEAC02201AF4162D61DC6B36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siloam Test-Siloam TestUITests/Pods-Siloam Test-Siloam TestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siloam Test-Siloam TestUITests/Pods-Siloam Test-Siloam TestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Siloam Test-Siloam TestUITests/Pods-Siloam Test-Siloam TestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18BB123F2A86782C00093E4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1871F5FB2A8695ED00290B14 /* SignUpViewController.swift in Sources */,
+				18DD73712A87867A00A1E307 /* MealViewController.swift in Sources */,
+				18DD73732A87868D00A1E307 /* MealViewModel.swift in Sources */,
 				18BB127B2A86850C00093E4A /* LoginViewModel.swift in Sources */,
 				1832331C2A8756DB003FF42E /* CommonStrings.swift in Sources */,
 				18BB12472A86782C00093E4A /* AppDelegate.swift in Sources */,
+				18DD73792A87B3D500A1E307 /* MealDetailViewController.swift in Sources */,
+				18DD73762A8791B000A1E307 /* MealsListModel.swift in Sources */,
 				18BB127D2A8689B600093E4A /* LoginViewController.swift in Sources */,
 				1871F6002A86AB4600290B14 /* StringExtension.swift in Sources */,
 				18BB12492A86782C00093E4A /* SceneDelegate.swift in Sources */,
 				1871F5F82A8694EC00290B14 /* CommonMethods.swift in Sources */,
+				18DD737B2A87B40B00A1E307 /* MealDetailViewModel.swift in Sources */,
 				1871F5FD2A86960300290B14 /* SignUpViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +688,7 @@
 		};
 		18BB126E2A86782F00093E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11BD7DE28DB7195DE4594D59 /* Pods-Siloam Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -523,6 +716,7 @@
 		};
 		18BB126F2A86782F00093E4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0568849DD160FE8E248E30 /* Pods-Siloam Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -550,6 +744,7 @@
 		};
 		18BB12712A86782F00093E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B1B6420605F51B830CD2BE /* Pods-Siloam TestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -569,6 +764,7 @@
 		};
 		18BB12722A86782F00093E4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA2774AC5F5F14EB9DA52A65 /* Pods-Siloam TestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -588,6 +784,7 @@
 		};
 		18BB12742A86782F00093E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CA201F09809EC8ED2DF4CB /* Pods-Siloam Test-Siloam TestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -605,6 +802,7 @@
 		};
 		18BB12752A86782F00093E4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF95992E6B4BDCD725ABEE0 /* Pods-Siloam Test-Siloam TestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

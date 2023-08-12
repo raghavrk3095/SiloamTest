@@ -1,0 +1,6 @@
+framework module Pods_Siloam_Test_Siloam_TestUITests {
+  umbrella header "Pods-Siloam Test-Siloam TestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -64,6 +64,7 @@ class LoginViewController: UIViewController {
     
     func initializeClosure() {
         self.initializeAlertClosure()
+        self.initializeLoginSuccessfulClosure()
     }
     
     func initializeAlertClosure() {
@@ -71,6 +72,19 @@ class LoginViewController: UIViewController {
             guard let self = self else { return }
             // show alert
             self.commonMethods.showCommonAlert(viewController: self, message: message)
+        }
+    }
+    
+    func initializeLoginSuccessfulClosure() {
+        self.loginViewModel.loginSuccessful = { [weak self] () in
+            guard let _ = self else { return }
+            if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+                let window = sceneDelegate.window
+                if let mealController = UIStoryboard(name: StoryboardName.main, bundle: nil).instantiateViewController(withIdentifier: ControllerName.mealViewController) as? UINavigationController {
+                    window?.rootViewController = mealController
+                    window?.makeKeyAndVisible()
+                }
+            }
         }
     }
     
