@@ -16,6 +16,14 @@ class MealDetailViewModel {
     var reloadTableViewClosure: (() -> ())?
     var showHideTableViewClosure: ((_ isShow: Bool) -> ())?
     
+    var updateLoadingStatus: (()->())?
+    
+    var isLoading: Bool = false {
+        didSet {
+            self.updateLoadingStatus?()
+        }
+    }
+    
     // MARK: - Call meal list api
     
     func callMealDetailApi(mealId: String) {
@@ -25,7 +33,14 @@ class MealDetailViewModel {
             "i" : mealId
         ]
         
+        // show loader
+        self.isLoading = true
+        
         AF.request(APIUrls.baseUrl + APIUrls.mealDetailUrl, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil, requestModifier: nil).responseDecodable(of: MealsListModel.self) { response in
+            
+            // hide loader
+            self.isLoading = false
+            
             switch response.result {
             case .success(let meals):
                 if let mealsList = meals.meals {

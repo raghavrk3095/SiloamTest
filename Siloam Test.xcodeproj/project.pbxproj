@@ -27,6 +27,9 @@
 		18DD73762A8791B000A1E307 /* MealsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD73752A8791B000A1E307 /* MealsListModel.swift */; };
 		18DD73792A87B3D500A1E307 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD73782A87B3D500A1E307 /* MealDetailViewController.swift */; };
 		18DD737B2A87B40B00A1E307 /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD737A2A87B40B00A1E307 /* MealDetailViewModel.swift */; };
+		18DD737E2A87D9AD00A1E307 /* DesignUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD737D2A87D9AD00A1E307 /* DesignUtilities.swift */; };
+		18DD73802A87DA3800A1E307 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD737F2A87DA3800A1E307 /* UIApplicationExtension.swift */; };
+		18DD73832A87DF6E00A1E307 /* FullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD73822A87DF6E00A1E307 /* FullScreenImageViewController.swift */; };
 		6FD884949BDB49CCD64FE706 /* Pods_Siloam_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE95C2035E7298CECF81D606 /* Pods_Siloam_TestTests.framework */; };
 		AB901C3D26AE449461BC4DBF /* Pods_Siloam_Test_Siloam_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFBBD188738E4B74F2D4191 /* Pods_Siloam_Test_Siloam_TestUITests.framework */; };
 		FA3BA0E20C27E720AEA73BCD /* Pods_Siloam_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3591688CE2EBB8EDF9293C /* Pods_Siloam_Test.framework */; };
@@ -76,6 +79,9 @@
 		18DD73752A8791B000A1E307 /* MealsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListModel.swift; sourceTree = "<group>"; };
 		18DD73782A87B3D500A1E307 /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
 		18DD737A2A87B40B00A1E307 /* MealDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
+		18DD737D2A87D9AD00A1E307 /* DesignUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignUtilities.swift; sourceTree = "<group>"; };
+		18DD737F2A87DA3800A1E307 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		18DD73822A87DF6E00A1E307 /* FullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewController.swift; sourceTree = "<group>"; };
 		2C0568849DD160FE8E248E30 /* Pods-Siloam Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siloam Test.release.xcconfig"; path = "Target Support Files/Pods-Siloam Test/Pods-Siloam Test.release.xcconfig"; sourceTree = "<group>"; };
 		39B1B6420605F51B830CD2BE /* Pods-Siloam TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siloam TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Siloam TestTests/Pods-Siloam TestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BF95992E6B4BDCD725ABEE0 /* Pods-Siloam Test-Siloam TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siloam Test-Siloam TestUITests.release.xcconfig"; path = "Target Support Files/Pods-Siloam Test-Siloam TestUITests/Pods-Siloam Test-Siloam TestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				1871F5FF2A86AB4600290B14 /* StringExtension.swift */,
+				18DD737F2A87DA3800A1E307 /* UIApplicationExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -164,6 +171,7 @@
 		18BB12452A86782C00093E4A /* Siloam Test */ = {
 			isa = PBXGroup;
 			children = (
+				18DD737C2A87D99A00A1E307 /* Utilities */,
 				18DD73742A87918D00A1E307 /* Models */,
 				1871F5FE2A86AB2E00290B14 /* Extensions */,
 				1871F5F62A8694CD00290B14 /* Commons */,
@@ -198,6 +206,7 @@
 		18BB12762A867B4800093E4A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18DD73812A87DF4E00A1E307 /* Full Screen Image */,
 				18DD73772A87B3B800A1E307 /* Meal Detail */,
 				18DD736F2A87866100A1E307 /* Meal */,
 				1871F5F92A8695D600290B14 /* SignUp */,
@@ -239,6 +248,22 @@
 				18DD737A2A87B40B00A1E307 /* MealDetailViewModel.swift */,
 			);
 			path = "Meal Detail";
+			sourceTree = "<group>";
+		};
+		18DD737C2A87D99A00A1E307 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				18DD737D2A87D9AD00A1E307 /* DesignUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		18DD73812A87DF4E00A1E307 /* Full Screen Image */ = {
+			isa = PBXGroup;
+			children = (
+				18DD73822A87DF6E00A1E307 /* FullScreenImageViewController.swift */,
+			);
+			path = "Full Screen Image";
 			sourceTree = "<group>";
 		};
 		2735CEFCB81AABC08CB9A235 /* Frameworks */ = {
@@ -508,12 +533,15 @@
 				18DD73732A87868D00A1E307 /* MealViewModel.swift in Sources */,
 				18BB127B2A86850C00093E4A /* LoginViewModel.swift in Sources */,
 				1832331C2A8756DB003FF42E /* CommonStrings.swift in Sources */,
+				18DD73832A87DF6E00A1E307 /* FullScreenImageViewController.swift in Sources */,
 				18BB12472A86782C00093E4A /* AppDelegate.swift in Sources */,
+				18DD73802A87DA3800A1E307 /* UIApplicationExtension.swift in Sources */,
 				18DD73792A87B3D500A1E307 /* MealDetailViewController.swift in Sources */,
 				18DD73762A8791B000A1E307 /* MealsListModel.swift in Sources */,
 				18BB127D2A8689B600093E4A /* LoginViewController.swift in Sources */,
 				1871F6002A86AB4600290B14 /* StringExtension.swift in Sources */,
 				18BB12492A86782C00093E4A /* SceneDelegate.swift in Sources */,
+				18DD737E2A87D9AD00A1E307 /* DesignUtilities.swift in Sources */,
 				1871F5F82A8694EC00290B14 /* CommonMethods.swift in Sources */,
 				18DD737B2A87B40B00A1E307 /* MealDetailViewModel.swift in Sources */,
 				1871F5FD2A86960300290B14 /* SignUpViewModel.swift in Sources */,

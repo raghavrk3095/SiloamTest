@@ -35,6 +35,7 @@ struct ControllerName {
     static let loginController = "LoginViewController"
     static let mealViewController = "MealViewController"
     static let mealDetailController = "MealDetailViewController"
+    static let fullScreenImageViewController = "FullScreenImageViewController"
 }
 
 struct CellIdentifiers {
@@ -49,4 +50,9 @@ struct APIUrls {
     static let baseUrl = "https://www.themealdb.com/api/json/v1/1"
     static let searchFirstLetterUrl = "/search.php"
     static let mealDetailUrl = "/lookup.php"
+}
+
+struct AccessibilityIdentifier {
+   static let loaderView = "LoaderView"
+   static let loaderIndicator = "LoaderIndicator"
 }

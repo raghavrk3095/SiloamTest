@@ -43,6 +43,7 @@ class MealDetailViewController: UIViewController {
     func initializeClosures() {
         self.initializeShowHideTableViewClosure()
         self.initializeTableViewClosure()
+        self.initializeShowHideCommonLoaderClosure()
     }
     
     func initializeShowHideTableViewClosure() {
@@ -56,6 +57,20 @@ class MealDetailViewController: UIViewController {
         self.mealDetailViewModel.reloadTableViewClosure = { [weak self] () in
             guard let self = self else { return }
             self.tableView.reloadData()
+        }
+    }
+    
+    func initializeShowHideCommonLoaderClosure() {
+        self.mealDetailViewModel.updateLoadingStatus = { [weak self] () in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                let isLoading = self.mealDetailViewModel.isLoading
+                if isLoading {
+                    Loader().show()
+                }else {
+                    Loader().hide()
+                }
+            }
         }
     }
 }

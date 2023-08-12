@@ -56,6 +56,7 @@ class MealViewController: UIViewController {
     func initializeClosures() {
         self.initializeShowHideTableViewClosure()
         self.initializeTableViewClosure()
+        self.initializeShowHideCommonLoaderClosure()
     }
     
     func initializeShowHideTableViewClosure() {
@@ -73,12 +74,34 @@ class MealViewController: UIViewController {
         }
     }
     
+    func initializeShowHideCommonLoaderClosure() {
+        self.mealViewModel.updateLoadingStatus = { [weak self] () in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                let isLoading = self.mealViewModel.isLoading 
+                if isLoading {
+                    Loader().show()
+                }else {
+                    Loader().hide()
+                }
+            }
+        }
+    }
+    
     // MARK: - Actions
     
     @objc func mealImageTapped(_ gesture: UITapGestureRecognizer) {
         let location = gesture.location(in: self.tableView)
-        if let indexPath = self.tableView.indexPathForRow(at: location), let cell = self.tableView.cellForRow(at: indexPath) as? MealsTableViewCell {
-            print("\(indexPath.row) \(cell)")
+        if let indexPath = self.tableView.indexPathForRow(at: location)/*, let cell = self.tableView.cellForRow(at: indexPath) as? MealsTableViewCell*/ {
+            let controller = UIStoryboard(name: StoryboardName.main, bundle: nil).instantiateViewController(withIdentifier: ControllerName.fullScreenImageViewController) as! FullScreenImageViewController
+            controller.modalPresentationStyle = .overFullScreen
+            controller.image = self.mealViewModel.meals[indexPath.row].mealThumbImage ?? ""
+            let transition = CATransition()
+            transition.duration = 0.4
+            transition.type = CATransitionType.fade
+            transition.subtype = CATransitionSubtype.fromBottom
+            self.view.window?.layer.add(transition, forKey: nil)
+            self.present(controller, animated: false, completion: nil)
         }
     }
 }
