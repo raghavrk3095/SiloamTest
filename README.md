@@ -6,8 +6,8 @@
 
 - Created **SignIn / SignUp** functionality using **Keychain** storage option:
   
-  - User can enter username and password and it is converted to the *base64 string* and stored in the *Keychain*. On successful sign up, user lands to the **sign in** page for sign in.
-  - User can sign in with same credentials. It fetches the data from *Keychain*, first converts that into *base64 string*, then to the *normal string* for matching purpose.
+  - User can enter username and password and it is converted to the *base64 encoded string* and stored in the *Keychain*. On successful sign up, user directs to the **sign in** page for sign in.
+  - User can sign in with same credentials. It fetches the data from *Keychain*, first converts that into *base64 string*, then decodes to the *normal string* for matching purpose.
 
 - Utilising **Meal DB API**:
   
