@@ -22,10 +22,10 @@ class MealDetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - View Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         // setup title
@@ -73,6 +73,20 @@ class MealDetailViewController: UIViewController {
             }
         }
     }
+    
+    // MARK: - Actions
+    
+    @objc func mealImageTapped(_ gesture: UITapGestureRecognizer) {
+        let controller = UIStoryboard(name: StoryboardName.main, bundle: nil).instantiateViewController(withIdentifier: ControllerName.fullScreenImageViewController) as! FullScreenImageViewController
+        controller.modalPresentationStyle = .overFullScreen
+        controller.image = self.mealDetailViewModel.meals[0].mealThumbImage ?? ""
+        let transition = CATransition()
+        transition.duration = 0.4
+        transition.type = CATransitionType.fade
+        transition.subtype = CATransitionSubtype.fromBottom
+        self.view.window?.layer.add(transition, forKey: nil)
+        self.present(controller, animated: false, completion: nil)
+    }
 }
 
 extension MealDetailViewController: UITableViewDataSource {
@@ -89,6 +103,12 @@ extension MealDetailViewController: UITableViewDataSource {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.mealImageDetailTableViewCell, for: indexPath) as! MealImageDetailTableViewCell
             cell.mealImageView.sd_setImage(with: URL(string: self.mealDetailViewModel.meals[indexPath.row].mealThumbImage ?? ""), placeholderImage: UIImage(named: CommonStrings.placehodlerImage))
+            
+            // Add tap gesture on image view
+            let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.mealImageTapped(_:)))
+            cell.mealImageView.isUserInteractionEnabled = true
+            cell.mealImageView.addGestureRecognizer(tapGesture)
+            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.mealNameDetailTableViewCell, for: indexPath) as! MealNameDetailTableViewCell

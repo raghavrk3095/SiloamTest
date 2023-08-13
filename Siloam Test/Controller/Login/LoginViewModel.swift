@@ -16,20 +16,24 @@ class LoginViewModel {
     
     // MARK: - Actions
     
-    func checkLoginButtonFunctionality(username: String, password: String) {
+    func checkLoginButtonFunctionality(username: String, password: String) -> String {
         if username == "" {
             self.showAlert?(CommonStrings.emptyUname)
+            return CommonStrings.emptyUname
         }
         else if password == "" {
             self.showAlert?(CommonStrings.emptyPass)
+            return CommonStrings.emptyPass
         }
         else {
             let credentials = self.retrieveCredentials()
             if credentials.uname != username || credentials.pass != password {
                 self.showAlert?(CommonStrings.wrongCreds)
+                return CommonStrings.wrongCreds
             }
             else {
                 self.loginSuccessful?()
+                return CommonStrings.loginSuccessful
             }
         }
     }

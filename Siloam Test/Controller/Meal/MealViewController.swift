@@ -123,9 +123,12 @@ extension MealViewController: UITableViewDataSource {
             cell.mealNameLabel.text = CommonStrings.mealName + name.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         }
         cell.mealImageView.sd_setImage(with: URL(string: self.mealViewModel.meals[indexPath.row].mealThumbImage ?? ""), placeholderImage: UIImage(named: CommonStrings.placehodlerImage))
+        
+        // Add tap gesture on image view
         let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.mealImageTapped(_:)))
         cell.mealImageView.isUserInteractionEnabled = true
         cell.mealImageView.addGestureRecognizer(tapGesture)
+        
         if let category = self.mealViewModel.meals[indexPath.row].mealCategory {
             cell.mealCategory.text = CommonStrings.mealCategory + category.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         }

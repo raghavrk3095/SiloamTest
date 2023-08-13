@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {
-        self.loginViewModel.checkLoginButtonFunctionality(username: usernameField.text ?? "", password: passwordField.text ?? "")
+        let _ = self.loginViewModel.checkLoginButtonFunctionality(username: usernameField.text ?? "", password: passwordField.text ?? "")
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {

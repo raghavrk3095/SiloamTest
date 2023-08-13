@@ -11,6 +11,7 @@ struct CommonStrings {
     static let emptyUname = "Please enter username"
     static let emptyPass = "Please enter password"
     static let wrongCreds = "Wrong username and password"
+    static let loginSuccessful = "Login successful"
     static let compName = "SiloamHospitals"
     static let eyeSlashImageName = "eye.slash.fill"
     static let eyeImageName = "eye.fill"

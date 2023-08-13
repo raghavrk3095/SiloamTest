@@ -53,7 +53,7 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
-        self.signUpViewModel.checkSignUpButtonFunctionality(username: usernameField.text ?? "", password: passwordField.text ?? "")
+        let _ = self.signUpViewModel.checkSignUpButtonFunctionality(username: usernameField.text ?? "", password: passwordField.text ?? "")
     }
     
     @objc func eyeButtonTapped() {

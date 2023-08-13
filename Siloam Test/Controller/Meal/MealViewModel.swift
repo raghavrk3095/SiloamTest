@@ -36,7 +36,8 @@ class MealViewModel {
             // show loader
             self.isLoading = true
             
-            AF.request(APIUrls.baseUrl + APIUrls.searchFirstLetterUrl, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil, requestModifier: nil).responseDecodable(of: MealsListModel.self) { response in
+            APIManager.callMealsListApi(apiUrl: APIUrls.baseUrl + APIUrls.searchFirstLetterUrl, params: parameters, headers: nil) { [weak self] response in
+                guard let self = self else { return }
                 
                 // hide loader
                 self.isLoading = false

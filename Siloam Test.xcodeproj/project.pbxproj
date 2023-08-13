@@ -22,6 +22,8 @@
 		18BB126A2A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB12692A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift */; };
 		18BB127B2A86850C00093E4A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB127A2A86850C00093E4A /* LoginViewModel.swift */; };
 		18BB127D2A8689B600093E4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB127C2A8689B600093E4A /* LoginViewController.swift */; };
+		18D3DF5F2A88BED00029DB85 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3DF5E2A88BED00029DB85 /* APIManager.swift */; };
+		18D3DF612A88D29A0029DB85 /* MealsListAndDetailApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3DF602A88D29A0029DB85 /* MealsListAndDetailApi.swift */; };
 		18DD73712A87867A00A1E307 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD73702A87867A00A1E307 /* MealViewController.swift */; };
 		18DD73732A87868D00A1E307 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD73722A87868D00A1E307 /* MealViewModel.swift */; };
 		18DD73762A8791B000A1E307 /* MealsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD73752A8791B000A1E307 /* MealsListModel.swift */; };
@@ -74,6 +76,8 @@
 		18BB12692A86782F00093E4A /* Siloam_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siloam_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18BB127A2A86850C00093E4A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		18BB127C2A8689B600093E4A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18D3DF5E2A88BED00029DB85 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		18D3DF602A88D29A0029DB85 /* MealsListAndDetailApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListAndDetailApi.swift; sourceTree = "<group>"; };
 		18DD73702A87867A00A1E307 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		18DD73722A87868D00A1E307 /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
 		18DD73752A8791B000A1E307 /* MealsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListModel.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 		18BB12452A86782C00093E4A /* Siloam Test */ = {
 			isa = PBXGroup;
 			children = (
+				18D3DF5D2A88BEC00029DB85 /* Helper */,
 				18DD737C2A87D99A00A1E307 /* Utilities */,
 				18DD73742A87918D00A1E307 /* Models */,
 				1871F5FE2A86AB2E00290B14 /* Extensions */,
@@ -190,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				18BB125D2A86782F00093E4A /* Siloam_TestTests.swift */,
+				18D3DF602A88D29A0029DB85 /* MealsListAndDetailApi.swift */,
 			);
 			path = "Siloam TestTests";
 			sourceTree = "<group>";
@@ -222,6 +228,14 @@
 				18BB127A2A86850C00093E4A /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		18D3DF5D2A88BEC00029DB85 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				18D3DF5E2A88BED00029DB85 /* APIManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		18DD736F2A87866100A1E307 /* Meal */ = {
@@ -540,6 +554,7 @@
 				18DD73762A8791B000A1E307 /* MealsListModel.swift in Sources */,
 				18BB127D2A8689B600093E4A /* LoginViewController.swift in Sources */,
 				1871F6002A86AB4600290B14 /* StringExtension.swift in Sources */,
+				18D3DF5F2A88BED00029DB85 /* APIManager.swift in Sources */,
 				18BB12492A86782C00093E4A /* SceneDelegate.swift in Sources */,
 				18DD737E2A87D9AD00A1E307 /* DesignUtilities.swift in Sources */,
 				1871F5F82A8694EC00290B14 /* CommonMethods.swift in Sources */,
@@ -552,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D3DF612A88D29A0029DB85 /* MealsListAndDetailApi.swift in Sources */,
 				18BB125E2A86782F00093E4A /* Siloam_TestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

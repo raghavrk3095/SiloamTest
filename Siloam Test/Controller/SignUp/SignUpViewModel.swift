@@ -17,12 +17,14 @@ class SignUpViewModel {
     
     // MARK: - Actions
     
-    func checkSignUpButtonFunctionality(username: String, password: String) {
+    func checkSignUpButtonFunctionality(username: String, password: String) -> String {
         if username == "" {
             showAlert?(CommonStrings.emptyUname)
+            return CommonStrings.emptyUname
         }
         else if password == "" {
             showAlert?(CommonStrings.emptyPass)
+            return CommonStrings.emptyPass
         }
         else {
             // Prepare the query for the keychain
@@ -48,8 +50,10 @@ class SignUpViewModel {
             let status = SecItemAdd(query as CFDictionary, nil)
             if status == errSecSuccess {
                 print(CommonStrings.credsSaved)
+                return CommonStrings.credsSaved
             } else {
                 print(CommonStrings.failedToSaveCreds)
+                return CommonStrings.failedToSaveCreds
             }
         }
     }
