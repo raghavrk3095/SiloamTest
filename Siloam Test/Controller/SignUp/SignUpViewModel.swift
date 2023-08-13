@@ -13,17 +13,17 @@ class SignUpViewModel {
     
     // MARK: - Variables
     
-    var showAlert: ((_ msg: String)->())?
+    var showAlert: ((_ msg: String, _ isSignUp: Bool)->())?
     
     // MARK: - Actions
     
     func checkSignUpButtonFunctionality(username: String, password: String) -> String {
         if username == "" {
-            showAlert?(CommonStrings.emptyUname)
+            showAlert?(CommonStrings.emptyUname, false)
             return CommonStrings.emptyUname
         }
         else if password == "" {
-            showAlert?(CommonStrings.emptyPass)
+            showAlert?(CommonStrings.emptyPass, false)
             return CommonStrings.emptyPass
         }
         else {
@@ -49,10 +49,10 @@ class SignUpViewModel {
             // Add the data to the keychain
             let status = SecItemAdd(query as CFDictionary, nil)
             if status == errSecSuccess {
-                print(CommonStrings.credsSaved)
+                self.showAlert?(CommonStrings.signUpSuccessful, true)
                 return CommonStrings.credsSaved
             } else {
-                print(CommonStrings.failedToSaveCreds)
+                self.showAlert?(CommonStrings.signUpFailed, false)
                 return CommonStrings.failedToSaveCreds
             }
         }

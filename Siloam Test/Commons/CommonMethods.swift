@@ -16,4 +16,12 @@ struct CommonMethods {
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         viewController.present(alertController, animated: true)
     }
+    
+    func showCommonAlertWithHandler(viewController: UIViewController, message: String, completion: @escaping(() -> Void)) {
+        let alertController = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            completion()
+        }))
+        viewController.present(alertController, animated: true)
+    }
 }

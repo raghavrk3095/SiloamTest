@@ -67,10 +67,25 @@ class SignUpViewController: UIViewController {
     }
     
     func initializeAlertClosure() {
-        self.signUpViewModel.showAlert = { [weak self] message in
+        self.signUpViewModel.showAlert = { [weak self] message, isSignUP in
             guard let self = self else { return }
-            // show alert
-            self.commonMethods.showCommonAlert(viewController: self, message: message)
+            
+            if isSignUP {
+                // show alert with handler
+                self.commonMethods.showCommonAlertWithHandler(viewController: self, message: message) {
+                    if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+                        let window = sceneDelegate.window
+                        if let loginController = UIStoryboard(name: StoryboardName.main, bundle: nil).instantiateViewController(withIdentifier: ControllerName.loginController) as? UINavigationController {
+                            window?.rootViewController = loginController
+                            window?.makeKeyAndVisible()
+                        }
+                    }
+                }
+            }
+            else {
+                // show alert
+                self.commonMethods.showCommonAlert(viewController: self, message: message)
+            }
         }
     }
     
